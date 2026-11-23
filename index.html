@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeQuest | Learn to Code Through Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">CQ</span><span>Code<span class="brand-accent">Quest</span></span></a>
+      <div class="profile-mini">
+        <div class="avatar">A</div>
+        <div><strong>Alex Morgan</strong><small>Beginner · Level 02</small></div>
+      </div>
+      <p class="nav-label">LEARN</p>
+      <nav>
+        <a class="nav-item active" href="#dashboard"><span>⌂</span> Dashboard</a>
+        <a class="nav-item" href="#missions"><span>▣</span> Story missions</a>
+        <a class="nav-item" href="#workspace"><span>⌘</span> Code lab</a>
+        <a class="nav-item" href="#achievements"><span>✧</span> Achievements</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="streak-card"><span class="streak-icon">✦</span><div><strong>3 day streak</strong><small>Keep your momentum!</small></div></div>
+        <div class="sidebar-note">Small steps.<br><b>Big breakthroughs.</b></div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="dashboard">
+      <header class="topbar">
+        <div><p class="eyebrow">MONDAY, YOUR NEXT CHAPTER STARTS HERE</p><h1>Good morning, Alex <span class="wave">✦</span></h1></div>
+        <div class="top-actions"><button class="icon-button" aria-label="Notifications">♧<i></i></button><div class="top-avatar">A</div></div>
+      </header>
+
+      <section class="welcome-banner">
+        <div class="banner-copy">
+          <span class="pill">YOUR LEARNING ADVENTURE</span>
+          <h2>Every great developer<br>starts with <em>one line.</em></h2>
+          <p>Learn programming by solving real challenges inside an interactive story. Your next mission is waiting.</p>
+          <button class="primary-button" id="continueBtn">Continue learning <span>→</span></button>
+        </div>
+        <div class="banner-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="code-window"><div class="window-dots"><b></b><b></b><b></b></div><div class="code-lines"><span class="code-purple">function</span> <span class="code-blue">buildFuture</span>() {<br>&nbsp;&nbsp;<span class="code-green">learn</span>(<span class="code-yellow">"everyday"</span>);<br>&nbsp;&nbsp;<span class="code-purple">return</span> <span class="code-yellow">"success"</span>;<br>}</div><div class="success-chip">✓ Mission unlocked</div></div>
+          <div class="float-star star-a">✦</div><div class="float-star star-b">✧</div>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Learning statistics">
+        <article class="stat-card"><div class="stat-icon purple">⌘</div><div><small>MISSIONS COMPLETED</small><strong id="completedCount">04 <span>/ 12</span></strong><div class="mini-progress"><i style="width:33%"></i></div></div></article>
+        <article class="stat-card"><div class="stat-icon blue">⚡</div><div><small>TOTAL XP EARNED</small><strong id="xpCount">320</strong><p class="stat-foot">+40 XP this week</p></div></article>
+        <article class="stat-card"><div class="stat-icon gold">✧</div><div><small>BADGES UNLOCKED</small><strong id="badgeCount">03</strong><p class="stat-foot">One more within reach</p></div></article>
+        <article class="stat-card"><div class="stat-icon green">◷</div><div><small>LEARNING TIME</small><strong>5.2 <span>hrs</span></strong><p class="stat-foot">You're building a habit</p></div></article>
+      </section>
+
+      <div class="section-heading" id="missions"><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2>Your story missions</h2></div><button class="text-button" id="allMissionsBtn">View all missions →</button></div>
+      <section class="mission-grid">
+        <article class="mission-card featured">
+          <div class="mission-top"><span class="mission-tag">MISSION 05 · PYTHON</span><span class="difficulty easy">● EASY</span></div>
+          <div class="mission-illustration city">⌂<span>✦</span><i>⌁</i></div>
+          <h3>Rescue the Space Station</h3><p>Power up the station by writing a program that calculates the crew's oxygen supply.</p>
+          <div class="mission-meta"><span>◷ 15 min</span><span>✧ 80 XP</span><span>▤ 3 tasks</span></div>
+          <button class="card-button" data-mission="space">Start mission <span>→</span></button>
+        </article>
+        <article class="mission-card">
+          <div class="mission-top"><span class="mission-tag">MISSION 06 · PYTHON</span><span class="difficulty medium">● MEDIUM</span></div>
+          <div class="mission-illustration forest">♧<span>✦</span><i>⌁</i></div>
+          <h3>Forest of Hidden Numbers</h3><p>Follow number clues, use loops, and find the secret path through the forest.</p>
+          <div class="mission-meta"><span>◷ 20 min</span><span>✧ 100 XP</span><span>▤ 4 tasks</span></div>
+          <button class="card-button secondary" data-mission="forest">Explore mission <span>→</span></button>
+        </article>
+        <article class="mission-card">
+          <div class="mission-top"><span class="mission-tag">MISSION 07 · PYTHON</span><span class="difficulty medium">● MEDIUM</span></div>
+          <div class="mission-illustration ocean">≈<span>✦</span><i>⌁</i></div>
+          <h3>Ocean of Decisions</h3><p>Help a research team make smart choices using conditions and logical thinking.</p>
+          <div class="mission-meta"><span>◷ 25 min</span><span>✧ 120 XP</span><span>▤ 4 tasks</span></div>
+          <button class="card-button secondary" data-mission="ocean">Explore mission <span>→</span></button>
+        </article>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel workspace-panel" id="workspace">
+          <div class="panel-heading"><div><p class="eyebrow">PRACTICE ZONE</p><h2>Quick code lab</h2></div><span class="live-label"><i></i> READY</span></div>
+          <div class="challenge-strip"><div class="challenge-number">01</div><div><strong>Say hello to the world</strong><p>Print the message <code>Hello, World!</code> to the output.</p></div></div>
+          <div class="editor">
+            <div class="editor-bar"><span><i></i> main.py</span><span>PYTHON 3</span></div>
+            <div class="editor-body"><div class="line-numbers">1<br>2<br>3</div><textarea id="codeInput" spellcheck="false" aria-label="Code editor">message = "Hello, World!"
+print(message)</textarea></div>
+          </div>
+          <div class="editor-actions"><button class="run-button" id="runBtn">▶ Run code</button><button class="hint-button" id="hintBtn">✧ Get a hint</button><button class="reset-button" id="resetBtn">Reset</button></div>
+          <div class="output-box"><div class="output-title"><span>OUTPUT</span><span id="runStatus">Waiting for your code...</span></div><pre id="outputText">Your result will appear here when you run your code.</pre></div>
+          <div class="feedback" id="feedback" aria-live="polite"></div>
+        </article>
+
+        <aside class="right-column">
+          <article class="panel progress-panel">
+            <div class="panel-heading"><div><p class="eyebrow">YOUR JOURNEY</p><h2>Weekly progress</h2></div><span class="week-label">THIS WEEK</span></div>
+            <div class="progress-number">72% <span>of your weekly goal</span></div>
+            <div class="large-progress"><i></i></div>
+            <div class="week-days"><span>M</span><span>T</span><span>W</span><span class="today">T</span><span>F</span><span>S</span><span>S</span></div>
+            <p class="progress-caption">You're doing great. Just 2 more learning sessions to reach your goal.</p>
+          </article>
+          <article class="panel leaderboard-panel">
+            <div class="panel-heading"><div><p class="eyebrow">LEARN TOGETHER</p><h2>Top learners</h2></div><span class="rank-label">WEEKLY</span></div>
+            <div class="leader-row"><span class="rank gold-rank">01</span><div class="leader-avatar peach">JM</div><div class="leader-name"><strong>Jamie Miller</strong><small>Level 05</small></div><b>580 XP</b></div>
+            <div class="leader-row current-user"><span class="rank">02</span><div class="leader-avatar violet">A</div><div class="leader-name"><strong>You · Alex</strong><small>Level 02</small></div><b>320 XP</b></div>
+            <div class="leader-row"><span class="rank">03</span><div class="leader-avatar mint">SK</div><div class="leader-name"><strong>Sam Kim</strong><small>Level 03</small></div><b>290 XP</b></div>
+            <button class="leader-link" id="leaderboardBtn">See full leaderboard →</button>
+          </article>
+        </aside>
+      </section>
+
+      <section class="panel achievements-panel" id="achievements">
+        <div class="panel-heading"><div><p class="eyebrow">MILESTONES THAT MATTER</p><h2>Your achievements</h2></div><button class="text-button" id="badgeInfoBtn">How badges work →</button></div>
+        <div class="badge-row">
+          <div class="achievement"><div class="achievement-icon first">⌘</div><div><strong>First Steps</strong><small>Complete your first mission</small></div><span class="unlocked">UNLOCKED</span></div>
+          <div class="achievement"><div class="achievement-icon streak">⚡</div><div><strong>On a Roll</strong><small>Practice 3 days in a row</small></div><span class="unlocked">UNLOCKED</span></div>
+          <div class="achievement"><div class="achievement-icon helper">✧</div><div><strong>Curious Mind</strong><small>Use 5 learning hints</small></div><span class="locked">2 / 5</span></div>
+        </div>
+      </section>
+      <footer>CODEQUEST <span>·</span> Learn by doing. Grow by building.</footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
